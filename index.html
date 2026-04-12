@@ -1,456 +1,426 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <title>Veltrix Soft</title>
-    <link rel="icon" href="logo sin fondo.png" type="image/png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veltrix Soft</title>
+  <link rel="icon" href="logo sin fondo.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
 </head>
-<body class="bg-gray-50">
-    <nav class="bg-white shadow-md fixed w-full z-50">
-  <div class=" mx-auto px-4 py-3 flex justify-between items-center">
 
-    <!-- LOGO + NOMBRE -->
-    <a href="#Inicio">
-      <div class="flex items-center gap-1,5">
-       <img src="logo sin fondo.png" class="h-14">
-       <span class="font-semibold text-gray-800">Veltrix Soft</span>
-     </div>
+<body>
 
+<!-- ══════════════════════════ NAV ══════════════════════════ -->
+<nav id="navbar" class="top">
+  <div class="max-w-6xl mx-auto px-5 py-3 flex justify-between items-center">
+
+    <a href="#Inicio" class="flex items-center gap-2 text-decoration-none" style="text-decoration:none">
+      <img src="logo sin fondo.png" alt="Veltrix Soft" class="h-11">
+      <span style="font-family:'Syne',sans-serif; font-weight:700; font-size:18px; color:#fff; text-shadow:0 1px 4px rgba(0,0,0,0.3);">Veltrix Soft</span>
     </a>
 
-    <!-- BOTÓN HAMBURGUESA -->
-    <button id="menu-btn" class="md:hidden text-2xl">
-      ☰
+    <!-- Hamburguesa -->
+    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menú">
+      <span class="block w-5 h-0.5 bg-white rounded"></span>
+      <span class="block w-5 h-0.5 bg-white rounded"></span>
+      <span class="block w-5 h-0.5 bg-white rounded"></span>
     </button>
 
-    <!-- LINKS (DESKTOP) -->
-    <div class="hidden md:flex items-center gap-8 text-gray-700">
-      <a href="#Inicio" class="hover:text-[#3FA9F5]">Inicio</a>
-      <a href="#Nosotros" class="hover:text-[#3FA9F5]">Nosotros</a>
-      <a href="#Servicios" class="hover:text-[#3FA9F5]">Servicios</a>
-      <a href="#Contacto" class="hover:text-[#3FA9F5]">Contacto</a>
+    <!-- Desktop links -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#Inicio"    class="nav-link">Inicio</a>
+      <a href="#Nosotros"  class="nav-link">Nosotros</a>
+      <a href="#Servicios" class="nav-link">Servicios</a>
+      <a href="#Contacto"  class="nav-link">Contacto</a>
+      <a href="#Contacto"  class="btn-primary" style="padding:9px 22px; font-size:14px;">Hablemos →</a>
     </div>
-
   </div>
 
-  <!-- MENÚ MÓVIL -->
-  <div id="menu" class="hidden md:hidden flex flex-col gap-4 px-6 py-6 bg-white shadow-md">
-
-  <a href="#Inicio" class="block text-gray-700 text-lg font-medium hover:text-[#3FA9F5] transition">
-    Inicio
-  </a>
-
-  <a href="#Nosotros" class="block text-gray-700 text-lg font-medium hover:text-[#3FA9F5] transition">
-    Nosotros
-  </a>
-
-  <a href="#Servicios" class="block text-gray-700 text-lg font-medium hover:text-[#3FA9F5] transition">
-    Servicios
-  </a>
-
-  <a href="#Contacto" class="block text-gray-700 text-lg font-medium hover:text-[#3FA9F5] transition">
-    Contacto
-  </a>
-
-</div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu">
+    <a href="#Inicio">Inicio</a>
+    <a href="#Nosotros">Nosotros</a>
+    <a href="#Servicios">Servicios</a>
+    <a href="#Contacto">Contacto</a>
+  </div>
 </nav>
 
 
+<!-- ══════════════════════════ HERO ══════════════════════════ -->
+<section id="Inicio" class="hero-bg min-h-screen flex flex-col justify-center pt-20 pb-16 px-5">
+  <div class="hero-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
 
-<!-- !Main -->
-<section id="Inicio" class="bg-gradient-to-b from-blue-300 via-blue-200 to-white py-24 px-8">
-  <div class="max-w-6xl mx-auto text-center">
+  <div class="max-w-6xl mx-auto text-center relative z-10">
 
-    <!-- BADGE -->
-    <div class="inline-block mb-6 px-4 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">
-      Desarrollo web & software moderno
+    <div class="badge mb-8 mx-auto" style="width:fit-content">
+      <span class="badge-dot"></span>
+      Desarrollo web &amp; software moderno
     </div>
 
-    <!-- TITULO -->
-    <h1 class="animar text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-      Construimos experiencias digitales
-      <br>
-      <span class="text-5xl font-bold bg-gradient-to-r from-[#3FA9F5] to-blue-700 bg-clip-text text-transparent">rápidas, elegantes y escalables</span>
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6" style="font-family:'Syne',sans-serif; text-shadow:0 2px 20px rgba(0,0,0,0.3);">
+      Construimos experiencias<br>
+      <span class="gradient-text">digitales que convierten</span>
     </h1>
 
-    <!-- DESCRIPCIÓN -->
-    <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
-      En Veltrix Soft diseñamos y desarrollamos soluciones digitales que no solo se ven bien,
-      sino que funcionan de verdad.
+    <p class="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto mb-10" style="line-height:1.75; opacity:0.85">
+      En Veltrix Soft diseñamos y desarrollamos soluciones digitales
+      que no solo se ven bien — sino que generan resultados reales.
     </p>
 
-    <!-- BOTONES -->
-    <div class=" mt-10 flex flex-col md:flex-row justify-center gap-4">
-      <a href="#" class="bg-blue-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold hover:bg-blue-700 transition">
-        Empezar proyecto
-      </a>
-
-      <a href="#" class="px-6 py-3 rounded-full border border-gray-300 text-gray-700 hover:bg-gray-100 transition">
-        Ver portafolio
-      </a>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-20">
+      <a href="#Contacto" class="btn-primary">Empezar proyecto →</a>
+      <a href="#Servicios" class="btn-ghost">Ver servicios</a>
     </div>
 
-  </div>
+    <!-- Hero feature cards -->
+    <div class="grid md:grid-cols-3 gap-5 max-w-4xl mx-auto">
 
-  <!-- CARDS FLOTANTES -->
-  <div class="mt-20 max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+      <div class="hero-card fade-up d1">
+        <div class="hero-card-icon">
+          <svg width="20" height="20" fill="none" stroke="#3FA9F5" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3 style="font-family:'Syne',sans-serif; color:#fff; font-size:16px; font-weight:700; margin-bottom:8px;">Alto rendimiento</h3>
+        <p style="color:rgba(255,255,255,0.65); font-size:14px; line-height:1.6">Sitios optimizados para velocidad máxima y experiencia de usuario superior.</p>
+      </div>
 
-    <div class="animar bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-      <h3 class="font-semibold text-lg mb-2"> Alto rendimiento</h3>
-      <p class="text-gray-600 text-sm">
-        Sitios optimizados para velocidad y experiencia de usuario.
-      </p>
+      <div class="hero-card fade-up d2">
+        <div class="hero-card-icon">
+          <svg width="20" height="20" fill="none" stroke="#3FA9F5" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 style="font-family:'Syne',sans-serif; color:#fff; font-size:16px; font-weight:700; margin-bottom:8px;">Diseño estratégico</h3>
+        <p style="color:rgba(255,255,255,0.65); font-size:14px; line-height:1.6">Interfaces pensadas para convertir visitantes en clientes reales.</p>
+      </div>
+
+      <div class="hero-card fade-up d3">
+        <div class="hero-card-icon">
+          <svg width="20" height="20" fill="none" stroke="#3FA9F5" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3 style="font-family:'Syne',sans-serif; color:#fff; font-size:16px; font-weight:700; margin-bottom:8px;">Escalabilidad</h3>
+        <p style="color:rgba(255,255,255,0.65); font-size:14px; line-height:1.6">Sistemas preparados para crecer junto a tu negocio sin límites.</p>
+      </div>
+
     </div>
-
-    <div class="animar bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-      <h3 class="font-semibold text-lg mb-2"> Diseño estratégico</h3>
-      <p class="text-gray-600 text-sm">
-        Interfaces pensadas para convertir visitantes en clientes.
-      </p>
-    </div>
-
-    <div class="animar bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-      <h3 class="font-semibold text-lg mb-2"> Escalabilidad</h3>
-      <p class="text-gray-600 text-sm">
-        Sistemas preparados para crecer junto a tu negocio.
-      </p>
-    </div>
-
   </div>
 </section>
 
-<!--About -->
-<section id="Nosotros" class="py-24 px-8 bg-gradient-to-b from-white via-white to-blue-200">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-    <!-- TEXTO -->
+<!-- ══════════════════════════ STATS ══════════════════════════ -->
+<section class="stats-section py-16 px-5">
+  <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-gray-100">
+    <div class="stat-card fade-up">
+      <div class="stat-number">30+</div>
+      <p style="color:#64748b; font-size:14px; margin-top:6px; font-weight:500">Proyectos entregados</p>
+    </div>
+    <div class="stat-card fade-up d1">
+      <div class="stat-number">100%</div>
+      <p style="color:#64748b; font-size:14px; margin-top:6px; font-weight:500">Clientes satisfechos</p>
+    </div>
+    <div class="stat-card fade-up d2">
+      <div class="stat-number">3x</div>
+      <p style="color:#64748b; font-size:14px; margin-top:6px; font-weight:500">Más conversiones</p>
+    </div>
+    <div class="stat-card fade-up d3">
+      <div class="stat-number">&lt;24h</div>
+      <p style="color:#64748b; font-size:14px; margin-top:6px; font-weight:500">Tiempo de respuesta</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════ NOSOTROS ══════════════════════════ -->
+<section id="Nosotros" class="py-24 px-5 bg-gray-50">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
     <div>
-      <span class="text-blue-600 font-semibold text-sm uppercase tracking-wide">
-        Sobre nosotros
-      </span>
-
-      <h2 class="text-4xl md:text-4xl font-bold text-gray-800 mt-4 leading-tight">
-        No solo desarrollamos software,
-        <br>
-        construimos soluciones que funcionan en el mundo real.
+      <span class="section-label">Sobre nosotros</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">
+        No solo desarrollamos software,<br>
+        construimos soluciones que <span style="color:var(--blue-main)">funcionan.</span>
       </h2>
-
-      <p class="mt-6 text-gray-600">
+      <p class="text-gray-600 mb-4" style="line-height:1.8">
         En Veltrix Soft combinamos diseño, tecnología y estrategia para crear
         productos digitales modernos. Nos enfocamos en rendimiento, experiencia
         de usuario y resultados que realmente impactan.
       </p>
-
-      <p class="mt-4 text-gray-600">
+      <p class="text-gray-600 mb-8" style="line-height:1.8">
         No hacemos páginas genéricas. Creamos herramientas que ayudan a negocios
         a crecer, escalar y destacar en un entorno digital competitivo.
       </p>
+      <a href="#Contacto" class="btn-primary" style="background:var(--blue-dark); box-shadow:0 4px 16px rgba(21,101,192,0.3)">
+        Trabajemos juntos →
+      </a>
     </div>
 
-    <!-- BLOQUES DESTACADOS -->
-    <div class="grid gap-6">
+    <div class="flex flex-col gap-4">
 
-      <div class="animar bg-white p-6 rounded-xl border hover:shadow-md transition">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy-icon lucide-trophy"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>
-        <h3 class="font-semibold text-black-800"> Enfoque estratégico</h3>
-        <p class="text-black-600 text-sm mt-2">
-          Cada proyecto tiene un objetivo claro: generar resultados.
-        </p>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">
+          <svg width="22" height="22" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"/><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"/><path d="M18 9h1.5a1 1 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/><path d="M6 9H4.5a1 1 0 0 1 0-5H6"/></svg>
+        </div>
+        <div>
+          <h3 style="font-family:'Syne',sans-serif; font-size:16px; font-weight:700; color:#1e293b; margin-bottom:4px;">Enfoque estratégico</h3>
+          <p style="color:#64748b; font-size:14px; line-height:1.6">Cada proyecto tiene un objetivo claro: generar resultados medibles para tu negocio.</p>
+        </div>
       </div>
 
-      <div class="animar bg-white p-6 rounded-xl border hover:shadow-md transition">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu-icon lucide-cpu"><path d="M12 20v2"/><path d="M12 2v2"/><path d="M17 20v2"/><path d="M17 2v2"/><path d="M2 12h2"/><path d="M2 17h2"/><path d="M2 7h2"/><path d="M20 12h2"/><path d="M20 17h2"/><path d="M20 7h2"/><path d="M7 20v2"/><path d="M7 2v2"/><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg>
-        <h3 class="font-semibold text-gray-800"> Tecnología moderna</h3>
-        <p class="text-gray-600 text-sm mt-2">
-          Usamos herramientas actuales para garantizar calidad y escalabilidad.
-        </p>
+      <div class="feature-card fade-up d1">
+        <div class="feature-icon">
+          <svg width="22" height="22" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M12 20v2"/><path d="M12 2v2"/><path d="M2 12h2"/><path d="M20 12h2"/><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg>
+        </div>
+        <div>
+          <h3 style="font-family:'Syne',sans-serif; font-size:16px; font-weight:700; color:#1e293b; margin-bottom:4px;">Tecnología moderna</h3>
+          <p style="color:#64748b; font-size:14px; line-height:1.6">Usamos herramientas actuales para garantizar calidad, velocidad y escalabilidad.</p>
+        </div>
       </div>
 
-      <div class="animar bg-white p-6 rounded-xl border hover:shadow-md transition">
-        <svg xmlns="http://www.w3.org/2000/svg" h-8 w-8 text-[#3FA9F5] mb-4 fill="none" stroke="currentColor" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-icon lucide-brain"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></svg>
-
-        <h3 class="font-semibold text-gray-800"> Mentalidad de crecimiento</h3>
-        <p class="text-gray-600 text-sm mt-2">
-          Creamos pensando en el futuro de tu negocio.
-        </p>
+      <div class="feature-card fade-up d2">
+        <div class="feature-icon">
+          <svg width="22" height="22" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/></svg>
+        </div>
+        <div>
+          <h3 style="font-family:'Syne',sans-serif; font-size:16px; font-weight:700; color:#1e293b; margin-bottom:4px;">Mentalidad de crecimiento</h3>
+          <p style="color:#64748b; font-size:14px; line-height:1.6">Pensamos en el futuro de tu negocio desde el primer día de diseño.</p>
+        </div>
       </div>
 
     </div>
-
   </div>
 </section>
 
 
-<!-- Servicios-->
-<section id="Servicios" class="bg-gradient-to-b from-blue-200 via-blue-400 to-blue-200     py-20 px-8 bg-gray-50">
-  <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
-    Nuestros Servicios
-  </h2>
+<!-- ══════════════════════════ SERVICIOS ══════════════════════════ -->
+<section id="Servicios" class="py-24 px-5" style="background: linear-gradient(180deg, #fff 0%, #EFF6FF 50%, #fff 100%);">
+  <div class="max-w-6xl mx-auto">
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-    <!-- CARD 1 -->
-    <div class="animar bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-      <h3 class="text-xl font-semibold mb-3">Desarrollo Web</h3>
-      <p class="text-gray-600">
-       Creamos sitios web modernos, rápidos y adaptados a todos los dispositivos. Nos enfocamos en diseño, rendimiento y experiencia de usuario para que tu negocio tenga presencia digital profesional.
-      </p>
+    <div class="text-center mb-16">
+      <span class="section-label">Lo que hacemos</span>
+      <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mt-2">Nuestros Servicios</h2>
+      <p class="text-gray-500 mt-4 max-w-xl mx-auto">Soluciones digitales completas diseñadas para impulsar tu negocio al siguiente nivel.</p>
     </div>
 
-    <!-- CARD 2 -->
-    <div class="animar bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-      <h3 class="text-xl font-semibold mb-3">Tiendas Online</h3>
-      <p class="text-gray-600">
-        Desarrollamos tiendas virtuales intuitivas y seguras, optimizadas para ofrecer una experiencia de compra fluida y aumentar tus ventas.
-      </p>
-    </div>
+    <div class="grid md:grid-cols-3 gap-7">
 
-    <!-- CARD 3 -->
-    <div class="animar bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-      <h3 class="text-xl font-semibold mb-3">Plataformas Digitales</h3>
-      <p class="text-gray-600">
-        Construimos sistemas y plataformas digitales adaptadas a las necesidades de tu negocio, automatizando procesos y mejorando la productividad.
-      </p>
+      <!-- Card 1 -->
+      <div class="card p-7 fade-up">
+        <div class="service-icon" style="background:#EFF6FF;">
+          <svg width="26" height="26" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3 style="font-family:'Syne',sans-serif; font-size:19px; font-weight:700; color:#1e293b; margin-bottom:10px;">Desarrollo Web</h3>
+        <p style="color:#64748b; font-size:14px; line-height:1.7; margin-bottom:16px;">
+          Sitios web modernos, rápidos y adaptados a todos los dispositivos. Diseño, rendimiento y experiencia de usuario de primer nivel.
+        </p>
+        <span style="font-size:13px; color:var(--blue-main); font-weight:600;">HTML · CSS · React · Next.js</span>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card p-7 fade-up d1" style="border-color:#bfdbfe; box-shadow:0 0 0 1px #bfdbfe;">
+        <div style="position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,#3FA9F5,#1565C0); border-radius:16px 16px 0 0;"></div>
+        <div style="background:#dbeafe; border-radius:8px; font-size:11px; font-weight:700; color:#1565C0; padding:3px 10px; width:fit-content; margin-bottom:14px; letter-spacing:0.06em; text-transform:uppercase;">Más solicitado</div>
+        <div class="service-icon" style="background:#DBEAFE;">
+          <svg width="26" height="26" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        </div>
+        <h3 style="font-family:'Syne',sans-serif; font-size:19px; font-weight:700; color:#1e293b; margin-bottom:10px;">Tiendas Online</h3>
+        <p style="color:#64748b; font-size:14px; line-height:1.7; margin-bottom:16px;">
+          E-commerce intuitivo y seguro, optimizado para convertir visitantes en compradores y maximizar tus ventas.
+        </p>
+        <span style="font-size:13px; color:var(--blue-main); font-weight:600;">WooCommerce · Shopify · Custom</span>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card p-7 fade-up d2">
+        <div class="service-icon" style="background:#F0FDF4;">
+          <svg width="26" height="26" fill="none" stroke="#15803D" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+        </div>
+        <h3 style="font-family:'Syne',sans-serif; font-size:19px; font-weight:700; color:#1e293b; margin-bottom:10px;">Plataformas Digitales</h3>
+        <p style="color:#64748b; font-size:14px; line-height:1.7; margin-bottom:16px;">
+          Sistemas y plataformas a medida para tu negocio, automatizando procesos y mejorando la productividad del equipo.
+        </p>
+        <span style="font-size:13px; color:#15803D; font-weight:600;">Node.js · APIs · Bases de datos</span>
+      </div>
+
     </div>
+  </div>
 </section>
 
 
-<section id="Contacto" class="py-24 px-8 bg-gradient-to-b from-blue-200 via-white bg-gray-50">
+<!-- ══════════════════════════ PROCESO ══════════════════════════ -->
+<section class="py-24 px-5 bg-gray-50">
+  <div class="max-w-4xl mx-auto text-center mb-14">
+    <span class="section-label">Cómo trabajamos</span>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Nuestro proceso</h2>
+  </div>
+
+  <div class="max-w-4xl mx-auto grid md:grid-cols-4 gap-6">
+    <div class="text-center fade-up">
+      <div style="width:56px;height:56px;background:linear-gradient(135deg,#3FA9F5,#1565C0);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:#fff;font-family:'Syne',sans-serif;font-weight:800;font-size:20px;">1</div>
+      <h4 style="font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:#1e293b;margin-bottom:6px;">Descubrimiento</h4>
+      <p style="color:#64748b;font-size:13px;line-height:1.6">Entendemos tu negocio, objetivos y necesidades.</p>
+    </div>
+    <div class="text-center fade-up d1">
+      <div style="width:56px;height:56px;background:linear-gradient(135deg,#3FA9F5,#1565C0);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:#fff;font-family:'Syne',sans-serif;font-weight:800;font-size:20px;">2</div>
+      <h4 style="font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:#1e293b;margin-bottom:6px;">Diseño</h4>
+      <p style="color:#64748b;font-size:13px;line-height:1.6">Creamos prototipos y flujos visuales aprobados por ti.</p>
+    </div>
+    <div class="text-center fade-up d2">
+      <div style="width:56px;height:56px;background:linear-gradient(135deg,#3FA9F5,#1565C0);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:#fff;font-family:'Syne',sans-serif;font-weight:800;font-size:20px;">3</div>
+      <h4 style="font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:#1e293b;margin-bottom:6px;">Desarrollo</h4>
+      <p style="color:#64748b;font-size:13px;line-height:1.6">Construimos con código limpio, moderno y escalable.</p>
+    </div>
+    <div class="text-center fade-up d3">
+      <div style="width:56px;height:56px;background:linear-gradient(135deg,#3FA9F5,#1565C0);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:#fff;font-family:'Syne',sans-serif;font-weight:800;font-size:20px;">4</div>
+      <h4 style="font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:#1e293b;margin-bottom:6px;">Lanzamiento</h4>
+      <p style="color:#64748b;font-size:13px;line-height:1.6">Publicamos, monitoreamos y damos soporte continuo.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════ CONTACTO ══════════════════════════ -->
+<section id="Contacto" class="py-24 px-5" style="background:linear-gradient(180deg,#fff 0%,#EFF6FF 100%)">
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
 
-    <!-- TEXTO -->
     <div>
-      <span class="text-[#3FA9F5] font-semibold text-sm uppercase tracking-wide">
-        Contacto
-      </span>
-
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-4">
-        ¿Tienes un proyecto en mente?
-      </h2>
-
-      <p class="mt-6 text-gray-600">
+      <span class="section-label">Contacto</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">¿Tienes un proyecto<br>en mente?</h2>
+      <p class="text-gray-600 mb-10" style="line-height:1.8">
         Cuéntanos tu idea y te ayudamos a convertirla en una solución digital real.
-        Respondemos lo más pronto posible.
+        Respondemos en menos de 24 horas.
       </p>
 
-      <!-- INFO EXTRA -->
-      <div class="mt-8 space-y-6 text-gray-600">
-        <a href="*"><p>📧 veltrixsoft@gmail.com</p></a>
-        <p>📱 +57 317 8385980</p>
-        <p>📍 Colombia</p>
+      <div class="flex flex-col gap-5">
+        <a href="mailto:veltrixsoft@gmail.com" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;">
+          <div style="width:44px;height:44px;background:#EFF6FF;border-radius:11px;display:flex;align-items:center;justify-content:center;">
+            <svg width="20" height="20" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <p style="font-size:12px;color:#94a3b8;font-weight:500;margin-bottom:1px;">Email</p>
+            <p style="font-size:15px;color:#1e293b;font-weight:500;">veltrixsoft@gmail.com</p>
+          </div>
+        </a>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="width:44px;height:44px;background:#EFF6FF;border-radius:11px;display:flex;align-items:center;justify-content:center;">
+            <svg width="20" height="20" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.9-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16v.92z"/></svg>
+          </div>
+          <div>
+            <p style="font-size:12px;color:#94a3b8;font-weight:500;margin-bottom:1px;">Teléfono</p>
+            <p style="font-size:15px;color:#1e293b;font-weight:500;">+57 317 8385980</p>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;">
+          <div style="width:44px;height:44px;background:#EFF6FF;border-radius:11px;display:flex;align-items:center;justify-content:center;">
+            <svg width="20" height="20" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <p style="font-size:12px;color:#94a3b8;font-weight:500;margin-bottom:1px;">Ubicación</p>
+            <p style="font-size:15px;color:#1e293b;font-weight:500;">Colombia 🇨🇴</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- FORMULARIO -->
+    <!-- Formulario -->
+    <div class="card p-8 fade-up" style="position:relative;">
+      <h3 style="font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:#1e293b;margin-bottom:20px;">Envíanos un mensaje</h3>
 
-       <form class="animar bg-white p-8 rounded-2xl shadow-md w-full max-w-md">
-   
-         <div>
-           <label class="block text-sm font-medium text-gray-700">
-             Nombre
-           </label>
-           <input type="text" placeholder="Tu nombre"
-             class="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-[#3FA9F5] outline-none">
-         </div>
-   
-         <div>
-           <label class="block text-sm font-medium text-gray-700">
-             Correo
-           </label>
-           <input type="email" placeholder="tu@email.com"
-             class="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-[#3FA9F5] outline-none">
-         </div>
-   
-         <div>
-           <label class="block text-sm font-medium text-gray-700">
-             Mensaje
-           </label>
-           <textarea rows="4" placeholder="Cuéntanos tu proyecto..."
-             class="w-full mt-2 p-3 border rounded-lg focus:ring-2 focus:ring-[#3FA9F5] outline-none"></textarea>
-         </div>
-   
-         <button type="submit"
-           class="w-full bg-[#3FA9F5] text-white py-3 rounded-lg font-semibold hover:bg-blue-600 hover:scale-105 transition duration-300">
-           Enviar mensaje
-         </button>
-          <p class="text-xs text-gray-400 text-center mt-3">
-               Tus datos están seguros. Respondemos en menos de 24h.
-            </p>  
-       </form>
+      <div class="form-group">
+        <label class="form-label">Nombre completo</label>
+        <input type="text" class="form-input" placeholder="Tu nombre">
+      </div>
 
+      <div class="form-group">
+        <label class="form-label">Correo electrónico</label>
+        <input type="email" class="form-input" placeholder="tu@email.com">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">¿Qué tipo de proyecto tienes?</label>
+        <select class="form-input" style="cursor:pointer;">
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option>Sitio web corporativo</option>
+          <option>Tienda online</option>
+          <option>Plataforma digital</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Cuéntanos tu proyecto</label>
+        <textarea class="form-input" rows="4" placeholder="Describe tu idea, metas o preguntas..." style="resize:vertical;"></textarea>
+      </div>
+
+      <button type="button" class="btn-primary" style="width:100%;justify-content:center;font-size:15px;border:none;cursor:pointer;">
+        Enviar mensaje →
+      </button>
+      <p style="font-size:12px;color:#94a3b8;text-align:center;margin-top:10px;">🔒 Tus datos están seguros. Respondemos en menos de 24h.</p>
+    </div>
+
+  </div>
 </section>
 
 
+<!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+<footer style="background:var(--navy); color:#94a3b8;">
+  <div class="max-w-6xl mx-auto px-5 py-16">
+    <div class="grid md:grid-cols-4 gap-10 mb-12">
 
-       <footer class="bg-[#0F172A] text-gray-300 py-16 px-8">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
-
-    <!-- LOGO + DESCRIPCIÓN -->
-    <div>
-      <div class="flex items-center ">
-        <img src="logo sin fondo.png" alt="Veltrix Soft" class="h-16" >
-        <span class="text-white text-lg font-semibold">Veltrix Soft</span>
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <img src="logo sin fondo.png" alt="Veltrix Soft" class="h-12">
+          <span style="font-family:'Syne',sans-serif;font-weight:700;font-size:18px;color:#fff;">Veltrix Soft</span>
+        </div>
+        <p style="font-size:14px;line-height:1.75;max-width:300px;margin-bottom:20px;">
+          Creamos soluciones digitales modernas enfocadas en rendimiento, diseño y crecimiento real para tu negocio.
+        </p>
+        <!-- Social links -->
+        <div class="flex gap-2">
+          <a href="#" class="social-btn" title="Instagram">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="LinkedIn">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="WhatsApp">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
       </div>
 
-      <p class="mt-4 text-gray-400 text-sm">
-        Creamos soluciones digitales modernas, enfocadas en rendimiento,
-        diseño y crecimiento real para tu negocio.
-      </p>
+      <div>
+        <h3 style="color:#fff;font-family:'Syne',sans-serif;font-weight:700;font-size:15px;margin-bottom:16px;">Navegación</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+          <li><a href="#Inicio"    class="footer-link">Inicio</a></li>
+          <li><a href="#Nosotros"  class="footer-link">Nosotros</a></li>
+          <li><a href="#Servicios" class="footer-link">Servicios</a></li>
+          <li><a href="#Contacto"  class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 style="color:#fff;font-family:'Syne',sans-serif;font-weight:700;font-size:15px;margin-bottom:16px;">Servicios</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+          <li><span class="footer-link" style="cursor:default;">Desarrollo Web</span></li>
+          <li><span class="footer-link" style="cursor:default;">Tiendas Online</span></li>
+          <li><span class="footer-link" style="cursor:default;">Plataformas Digitales</span></li>
+        </ul>
+      </div>
+
     </div>
 
-    <!-- NAVEGACIÓN -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Navegación</h3>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#Inicio" class="hover:text-white transition">Inicio</a></li>
-        <li><a href="#Servicios" class="hover:text-white transition">Servicios</a></li>
-        <li><a href="#Nosotros" class="hover:text-white transition">Nosotros</a></li>
-        <li><a href="#Contacto" class="hover:text-white transition">Contacto</a></li>
-      </ul>
+    <div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;">
+      <p style="font-size:13px;color:#475569;">© 2026 Veltrix Soft. Todos los derechos reservados.</p>
+      <p style="font-size:12px;color:#334155;">Hecho con ❤️ en Colombia</p>
     </div>
-
-    <!-- SERVICIOS -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Servicios</h3>
-      <ul class="space-y-2 text-sm">
-        <li>Desarrollo Web</li>
-        <li>Tiendas Online</li>
-        <li>Plataformas Digitales</li>
-      </ul>
-    </div>
-
-    <!-- CONTACTO -->
-    <div>
-      <h3 class="text-white font-semibold mb-4">Contacto</h3>
-      <ul class="space-y-2 text-sm">
-        <li>📧 veltrixsoft@gmail.com</li>
-        <li>📱 +57 317 8385980</li>
-        <li>📍 Colombia</li>
-      </ul>
-    </div>
-
   </div>
-
-  <!-- LÍNEA INFERIOR -->
-  <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500">
-    © 2026 Veltrix Soft. Todos los derechos reservados.
-  </div>
-
-  <script>
-  const elementos = document.querySelectorAll(".animar");
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.remove("opacity-0", "translate-y-10");
-      entry.target.classList.add("opacity-100", "translate-y-0");
-    }
-  });
-});
-
-elementos.forEach(el => observer.observe(el));
-
-
-const btn = document.getElementById("menu-btn");
-const menu = document.getElementById("menu");
-
-btn.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-});
-
-</script>
 </footer>
-     
 
-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
