@@ -327,43 +327,83 @@
 
     <!-- Formulario -->
     <div class="card p-8 fade-up" style="position:relative;">
-      <h3 style="font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:#1e293b;margin-bottom:20px;">Envíanos un mensaje</h3>
+  <h3 style="font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:#1e293b;margin-bottom:20px;">
+    Envíanos un mensaje
+  </h3>
 
-      <div class="form-group">
-        <label class="form-label">Nombre completo</label>
-        <input type="text" class="form-input" placeholder="Tu nombre">
-      </div>
+  <form action="https://formspree.io/f/mbggrvyo" method="POST">
 
-      <div class="form-group">
-        <label class="form-label">Correo electrónico</label>
-        <input type="email" class="form-input" placeholder="tu@email.com">
-      </div>
+    <input type="hidden" name="_subject" value="Nuevo contacto desde Veltrix Soft">
 
-      <div class="form-group">
-        <label class="form-label">¿Qué tipo de proyecto tienes?</label>
-        <select class="form-input" style="cursor:pointer;">
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option>Sitio web corporativo</option>
-          <option>Tienda online</option>
-          <option>Plataforma digital</option>
-          <option>Otro</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label class="form-label">Cuéntanos tu proyecto</label>
-        <textarea class="form-input" rows="4" placeholder="Describe tu idea, metas o preguntas..." style="resize:vertical;"></textarea>
-      </div>
-
-      <button type="button" class="btn-primary" style="width:100%;justify-content:center;font-size:15px;border:none;cursor:pointer;">
-        Enviar mensaje →
-      </button>
-      <p style="font-size:12px;color:#94a3b8;text-align:center;margin-top:10px;">🔒 Tus datos están seguros. Respondemos en menos de 24h.</p>
+    <div class="form-group">
+      <label class="form-label" for="nombre">Nombre completo</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        class="form-input"
+        placeholder="Tu nombre"
+        required
+      >
     </div>
 
-  </div>
-</section>
+    <div class="form-group">
+      <label class="form-label" for="correo">Correo electrónico</label>
+      <input
+        type="email"
+        id="correo"
+        name="email"
+        class="form-input"
+        placeholder="tu@email.com"
+        required
+      >
+    </div>
 
+    <div class="form-group">
+      <label class="form-label" for="proyecto">¿Qué tipo de proyecto tienes?</label>
+      <select
+        id="proyecto"
+        name="tipo_proyecto"
+        class="form-input"
+        style="cursor:pointer;"
+        required
+      >
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="Sitio web corporativo">Sitio web corporativo</option>
+        <option value="Tienda online">Tienda online</option>
+        <option value="Plataforma digital">Plataforma digital</option>
+        <option value="Otro">Otro</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="mensaje">Cuéntanos tu proyecto</label>
+      <textarea
+        id="mensaje"
+        name="message"
+        class="form-input"
+        rows="4"
+        placeholder="Describe tu idea, metas o preguntas..."
+        style="resize:vertical;"
+        required
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="btn-primary"
+      style="width:100%;justify-content:center;font-size:15px;border:none;cursor:pointer;"
+    >
+      Enviar mensaje →
+    </button>
+
+  </form>
+
+  <p style="font-size:12px;color:#94a3b8;text-align:center;margin-top:10px;">
+    Tus datos se utilizarán para responder a tu solicitud.
+    Respondemos en menos de 24h.
+  </p>
+</div>
 
 <!-- ══════════════════════════ FOOTER ══════════════════════════ -->
 <footer style="background:var(--navy); color:#94a3b8;">
